@@ -7,6 +7,8 @@ const imagemLight = document.getElementById('light-imagem')
 const imagemDark = document.getElementById('dark-imagem')
 const sobre = document.getElementById('sobre')
 const footer = document.getElementById('footer')
+const linkNav = document.getElementById('link-nav')
+const logoNav = document.getElementById('logo-nav')
 
 btnLight.addEventListener('click', () => {
   btnLight.classList.add('hidden')
@@ -19,6 +21,8 @@ btnLight.addEventListener('click', () => {
   footer.classList.remove('footer-light')
   sobre.classList.remove('text-black')
   sobre.classList.add('text-white')
+  linkNav.style.color = "var(--white)"
+  logoNav.style.color = "var(--white)"
 })
 
 btnDark.addEventListener('click', () => {
@@ -32,4 +36,6 @@ btnDark.addEventListener('click', () => {
   footer.classList.add('footer-light')
   sobre.classList.remove('text-white')
   sobre.classList.add('text-black')
+  linkNav.style.color = "var(--black)"
+  logoNav.style.color = "var(--black)"
 })

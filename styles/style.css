@@ -169,6 +169,11 @@ footer {
   .sobre img {
     width: 50%;
   }
+
+  .light {
+    background-color: var(--black);
+    color: var(--white);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -200,6 +205,11 @@ footer {
 
   .sobre img {
     width: 50%;
+  }
+
+  .light {
+    background-color: var(--black);
+    color: var(--white);
   }
 }
 

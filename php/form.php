@@ -12,7 +12,11 @@
         <input type="text" id="nome" name="nome"><br><br>
 
         <label for="sexo">Sexo:</label>
-        <input type="text" id="sexo" name="sexo"><br><br>
+     <select id="sexo" name="sexo">
+    <option value="ac">Masculino</option>
+    <option value="al">Feminino</option>
+    </select><br><br>
+    
 
         <label for="email">E-mail:</label>
         <input type="text" id="email" name="email"><br><br>
@@ -36,17 +40,9 @@
         <input type="text" id="newsletter" name="newsletter"><br><br>
 
 
+        
 
-<label for="sexo">Sexo:</label>
-<select id="sexo" name="sexo">
-    <option value="ac">Masculino</option>
-    <option value="al">Feminino</option>
-  
-</select><br><br>
-
-                
-
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Confirmar">
     </form>
 
 </body>

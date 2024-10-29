@@ -3,6 +3,15 @@ PHP e MySQL
 
 ## Professor: Helder Rodrigues da Costa
 
+## Equipe
+- Andreza Barros
+- Felipe Moreira
+- Flávia Reis de Almeida
+- Gustavo Sousa
+- Jean Alberto
+- Lucas Tavares
+- Luciano Pereira Barbosa Neto
+
 ## Instruções: 
 1.	Só serão aceitos arquivos HTML, CSS, JavaScript, PHP e MySQL.
 2.	A atividade deve ser entregue individualmente apesar de dever ser desenvolvida em grupo de até 6 alunos.

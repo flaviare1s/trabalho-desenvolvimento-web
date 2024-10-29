@@ -33,10 +33,20 @@ a {
 
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .nome-hotel-light {
@@ -138,7 +148,9 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
- 
+  h1 {
+    font-size: 30px;
+  }
 
   .imagem-container {
     position: relative;
@@ -160,6 +172,9 @@ footer {
 }
 
 @media (min-width: 1024px) {
+    h1 {
+    font-size: 40px;
+  }
   .header {
     padding: 30px;
   }

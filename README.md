@@ -5,10 +5,10 @@ PHP e MySQL
 
 ## Equipe
 - Andreza Barros
-- Felipe Moreira
+- Felipe Moreira Rodrigues de Lima
 - Flávia Reis de Almeida
 - Gustavo Sousa
-- Jean Alberto
+- Jean Alberto Souza da Silva
 - Lucas Tavares
 - Luciano Pereira Barbosa Neto
 

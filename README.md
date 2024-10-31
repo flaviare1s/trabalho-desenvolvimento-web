@@ -9,7 +9,7 @@ PHP e MySQL
 - Flávia Reis de Almeida
 - Gustavo Sousa
 - Jean Alberto Souza da Silva
-- Lucas Tavares
+- Lucas Terceiro Tavares de Vasconcelos
 - Luciano Pereira Barbosa Neto
 
 ## Instruções: 

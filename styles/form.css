@@ -1,0 +1,130 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --orange: #ff9800; /* Laranja suave */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+  overflow-x: hidden;
+  font-size: 18px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: black; /* Cor do título do formulário */
+}
+
+form {
+  background-color: var(--white); /* Fundo branco para o formulário */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Aumentar a largura do formulário */
+  max-width: 600px; /* Largura máxima do formulário */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black; /* Cor dos rótulos para preto */
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%; /* Largura total para campos de entrada */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--orange); /* Bordas mais largas */
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff5722; /* Efeito hover para o botão */
+}
+
+textarea {
+  height: 100px; /* Altura fixa para a área de texto */
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Diminuir tamanho da fonte em telas menores */
+  }
+
+  form {
+    width: 95%; /* Ajustar largura em telas menores */
+  }
+}
+
+.label-text {
+  color: black; /* Define a cor dos rótulos como preto */
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+h1 {
+  color: white;
+  font-size: 24px; /* ou o tamanho desejado */
+  text-align: center;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../imagens/dark-mode.jpg'); /* Caminho atualizado */
+  background-size: cover; /* Para cobrir toda a área do fundo */
+  background-position: center; /* Centraliza a imagem */
+  color: var(--white);
+  margin: 0;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com um pouco de transparência */
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid var(--red);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

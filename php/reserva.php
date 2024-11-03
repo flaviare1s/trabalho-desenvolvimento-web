@@ -30,7 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Executa a declaração e verifica se a inserção foi bem-sucedida
   if ($stmt->execute()) {
-    echo "Reserva realizada com sucesso!";
+    header("Location: success.php");
+    exit();
   } else {
     echo "Erro ao realizar a reserva: " . $stmt->error;
   }

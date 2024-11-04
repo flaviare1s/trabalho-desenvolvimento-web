@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faça sua Reserva</title>
-  <link rel="stylesheet" href="formulario/form.css">
+  <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body>
-  <a href="../index.html" class="back-home">Voltar para Home</a>
+  <a href="index.html" class="back-home">Voltar para Home</a>
   <div class="container">
     <h1>Faça a sua reserva:</h1>
     <form method="post" action="reserva.php">
@@ -27,7 +27,7 @@
       <input type="text" id="email" name="email" required>
 
       <label for="data_de_chegada">Data de Chegada:</label>
-      <input type="text" id="data_de_chegada" name="data_de_chegada" required>
+      <input type="date" id="data_de_chegada" name="data_de_chegada" required>
 
       <label for="numero_de_noites">Número de noites:</label>
       <input type="number" id="numero_de_noites" name="numero_de_noites" required>

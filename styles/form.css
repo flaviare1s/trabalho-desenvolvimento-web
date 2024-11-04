@@ -17,7 +17,7 @@
     align-items: center;
     min-height: 100vh;
     background-color: var(--black);
-    background-image: url('dark-mode.jpg');
+    background-image: url('../imagens/dark-mode.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);

@@ -1,0 +1,127 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --orange: #ff9800;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Ibarra Real Nova', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--black);
+    background-image: url('dark-mode.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 20px;
+    overflow-x: hidden;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  a.back-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--white); /* Define o link como branco */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+  a.back-home:hover {
+    color: var(--orange); /* Muda para laranja no hover */
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px; /* Adiciona espaço acima do título */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    border: 3px solid var(--orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--black);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #ff5722;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    form {
+      width: 95%;
+    }
+  }
+  

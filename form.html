@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faça sua Reserva</title>
+  <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-  <h1>Página em Construção!</h1>
+  <a href="../index.html" class="back-home">Voltar para Home</a>
+  <div class="container">
+    <h1>Faça a sua reserva:</h1>
+    <form method="post" action="reserva.php">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+      </select>
+
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="data_de_chegada">Data de Chegada:</label>
+      <input type="date" id="data_de_chegada" name="data_de_chegada" required>
+
+      <label for="numero_de_noites">Número de noites:</label>
+      <input type="number" id="numero_de_noites" name="numero_de_noites" required>
+
+      <label for="numero_de_hospedes">Número de hóspedes:</label>
+      <input type="number" min="1" max="99" id="numero_de_hospedes" name="numero_de_hospedes" required>
+
+      <label for="total_estimado">Total estimado:</label>
+      <input type="number" id="total_estimado" name="total_estimado" required>
+
+      <label for="mensagem">Mensagem ou Observações:</label>
+      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+      <label for="newsletter">Gostaria de receber e-mails contendo atualizações, promoções entre outras coisas?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="newsletter" value="sim" required> Sim</label>
+        <label><input type="radio" name="newsletter" value="nao" checked> Não</label>
+      </div>
+
+      <input type="submit" value="Confirmar">
+    </form>
+  </div>
 </body>
+
 </html>

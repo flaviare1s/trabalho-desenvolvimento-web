@@ -1,47 +1,77 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/form.css">
-  <title>Faça sua Reserva</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <script src="./scripts/script.js" defer></script>
+  <title>Hotel Conforto</title>
 </head>
 
-<body>
-  <a style="display: block; text-align: left; text-decoration: none; font-weight: bold; color: var(--white); margin-bottom: 10px; width: 100%; padding: 10px;"
-    href="../index.html">Voltar para Home</a>
-  <h1>Faça a sua reserva:</h1>
-  <form method="post" action="reserva.php">
-    <label class="label-text" for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required><br>
-    <label class="label-text" for="sexo">Sexo:</label>
-    <select id="sexo" name="sexo" required>
-      <option value=""></option>
-      <option value="ac">Masculino</option>
-      <option value="al">Feminino</option>
-    </select><br>
-    <label class="label-text" for="email">E-mail:</label>
-    <input type="text" id="email" name="email" required><br>
-    <label class="label-text" for="data_de_chegada">Data de Chegada:</label>
-    <input type="text" id="data_de_chegada" name="data_de_chegada" required><br>
-    <label class="label-text" for="numero_de_noites">Número de noites:</label>
-    <input type="text" id="numero_de_noites" name="numero_de_noites" required><br>
-    <label class="label-text" for="numero_de_hospedes">Número de hospedes:</label>
-    <input type="number" min="1" max="99" id="numero_de_hospedes" name="numero_de_hospedes" required><br>
-    <label class="label-text" for="total_estimado">Total estimado:</label>
-    <input type="text" id="total_estimado" name="total_estimado" required><br>
-    <label class="label-text" for="mensagem">Mensagem ou Observaçoes:</label><br>
-    <textarea id="mensagem" name="mensagem"></textarea><br>
-    <label class="label-text" for="newsletter">Gostaria de receber e-mails contendo atualizações, promoções entre outras
-      coisas?</label><br>
-    <div class="radio-group">
-      <input type="radio" id="newsletter" name="newsletter" value="sim">Sim
-      <input type="radio" id="newsletter" name="newsletter" value="nao" checked="checked">Não
-    </div>
-    <br>
-    <input type="submit" value="Confirmar">
-  </form>
+<body id="body">
+  <header class="header">
+    <nav class="menu">
+      <h1><a id="logo-nav" href="index.html">Hotel Conforto</a></h1>
+      <a id="link-nav" class="text-white" href="./php/form.php">Cadastro</a>
+      <a id="link-nav" class="text-white" href="./php/reservas.php">Reservas</a>
+    </nav>
+    <button id="btn-sol">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="sol">
+        <path fill="#fff" fill-rule="evenodd"
+          d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z" />
+      </svg>
+    </button>
+    <button id="btn-lua" class="hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="lua">
+        <path fill="#000" fill-rule="evenodd"
+          d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z" />
+      </svg>
+    </button>
+  </header>
+  <main>
+    <section class="imagem-container">
+      <img class="imagem hidden" id="light-imagem" src="./imagens/light-mode.jpg" alt="Piscina externa do hotel">
+      <h2 class="title hidden light" id="title-light">Bem-vindo ao <span class="nome-hotel-light">Hotel Conforto</span>
+        - Sua Estadia dos Sonhos Começa Aqui!</h2>
+    </section>
+    <section class="imagem-container">
+      <img class="imagem" id="dark-imagem" src="./imagens/dark-mode.jpg" alt="Restaurante do hotel">
+      <h2 class="title dark" id="title-dark">Bem-vindo ao <span class="nome-hotel-dark">Hotel Conforto</span> - Sua
+        Estadia dos Sonhos Começa Aqui!</h2>
+    </section>
+    <section class="sobre text-white">
+      <img class="avatar" src="./imagens/hotel.jpg" alt="Área da piscina do hotel">
+      <section class="sobre-content" id="sobre">
+        <p>No Hotel Conforto, oferecemos uma experiência única de hospitalidade e bem-estar. Localizado no coração da
+          cidade, nosso
+          hotel é o refúgio perfeito tanto para quem viaja a negócios quanto a lazer. Com acomodações elegantes e
+          modernas,
+          serviços personalizados e uma equipe dedicada a tornar sua estadia inesquecível, você poderá desfrutar de
+          quartos amplos
+          e confortáveis, uma gastronomia de excelência e uma área de lazer completa para relaxar e aproveitar cada
+          momento. Venha
+          descobrir o equilíbrio perfeito entre conforto e sofisticação no Hotel Conforto.</p>
+        <p>Além de nossas acomodações de alta qualidade, o Hotel Conforto oferece uma variedade de comodidades que
+          atendem a todas
+          as suas necessidades. Desfrute de um delicioso café da manhã continental, um centro de fitness totalmente
+          equipado, e
+          uma piscina relaxante para os dias mais quentes. Para aqueles que buscam explorar a cidade, nossa equipe está
+          à
+          disposição para fornecer informações sobre passeios locais, transporte e recomendações de restaurantes. No
+          Hotel
+          Conforto, sua satisfação é nossa prioridade, e estamos aqui para garantir que cada aspecto da sua estadia seja
+          perfeito.</p>
+      </section>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>©️ 2024 - Hotel Conforto - Todos os direitos reservados</p>
+  </footer>
 </body>
 
 </html>

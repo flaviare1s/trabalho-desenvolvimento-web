@@ -1,0 +1,113 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ibarra Real Nova', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+  overflow-x: hidden;
+  font-size: 18px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #fff;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #222;
+}
+
+tr:hover {
+  background-color: #444;
+}
+
+td {
+  color: #ddd;
+}
+
+td a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.hidden, .hidden-sm, .hidden-md, .hidden-lg {
+  display: none;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .hidden-sm {
+    display: table-cell;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hidden-sm {
+    display: table-cell;
+  }
+
+  .hidden-md {
+    display: table-cell;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .hidden-sm {
+    display: table-cell;
+  }
+
+  .hidden-md {
+    display: table-cell;
+  }
+
+  .hidden-lg {
+    display: table-cell;
+  }
+}

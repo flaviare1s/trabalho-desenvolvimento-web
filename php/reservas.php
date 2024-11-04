@@ -1,7 +1,6 @@
 <?php
 include 'conexao.php';
 
-// Consulta SQL para selecionar todas as reservas
 $sql = "SELECT * FROM reservas";
 $result = $conexao->query($sql);
 ?>
@@ -51,7 +50,7 @@ $result = $conexao->query($sql);
           <td class="hidden"><?php echo $row['newsletter']; ?></td>
           <td class="hidden-sm"><?php echo $row['data_reserva']; ?></td>
           <td>
-            <a href="editar_reserva.php?id='<?php echo $row['id']; ?>">Editar</a>
+            <a href="editar_reserva.php?id=<?php echo $row['id']; ?>">Editar</a>
             <a href="excluir_reserva.php?id=<?php echo $row['id']; ?>">Excluir</a>
           </td>
         </tr>

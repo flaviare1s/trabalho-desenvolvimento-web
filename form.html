@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faça sua Reserva</title>
   <link rel="stylesheet" href="styles/form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <a href="index.html" class="back-home">Voltar para Home</a>
   <div class="container">
     <h1>Faça a sua reserva:</h1>
-    <form method="post" action="reserva.php">
+    <form>
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required>
 
@@ -47,7 +53,13 @@
         <label><input type="radio" name="newsletter" value="nao" checked> Não</label>
       </div>
 
-      <input type="submit" value="Confirmar">
+      <form>
+        <!-- Outros campos do formulário, se houver -->
+        <button type="button" onclick="window.location.href='sucess.html'">Confirmar</button>
+      </form>
+      
+      
+      
     </form>
   </div>
 </body>

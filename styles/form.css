@@ -89,7 +89,7 @@
     border-radius: 4px;
   }
   
-  input[type="submit"] {
+  button[type="button"] {
     background-color: var(--orange);
     color: var(--white);
     padding: 10px 15px;
@@ -97,12 +97,13 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #ff5722;
-  }
-  
+}
+
+button[type="submit"]:hover {
+    background-color: #ff5722; /* Cor ao passar o mouse */
+}
+
+
   textarea {
     height: 100px;
   }
